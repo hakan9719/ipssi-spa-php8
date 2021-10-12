@@ -19,18 +19,18 @@ function createAdmin($values){
     $sql = "INSERT INTO users (username,password) VALUES (?,?)";
     $res = $db -> prepare($sql);
     $res = $res -> execute($values);
-    var_dump($res);
-    var_dump($sql);
     return $res;
 }
 
 
 function dbConnect(){
     require_once './config.php';
-    try {
+    try 
+    {
         $db = new PDO("mysql:host=".SERVER.";dbname=".BASE,USER,PASSWD);
         return $db;
-    } catch(Exception $e) {
+    } catch(Exception $e) 
+    {
         die('Erreur : '.$e->getMessage());
     }
 }

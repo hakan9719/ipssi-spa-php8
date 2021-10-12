@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-5">
     <form action="<?=URL?>index.php?action=addAdmin" method="post">
          <div class="row g-2 align-items-center">
             <div class="mb-3 row">
@@ -14,7 +14,6 @@
                 </div>
             </div>
         </div> 
-
         <input class="btn btn-primary" type="submit" value="Ajouter"></input>
     </form>
 </div>

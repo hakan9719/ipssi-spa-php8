@@ -10,21 +10,23 @@ session_start();
 include('head.php');
 
 // Routeur
-if (isset($_GET['action'])) {
-
-    match ($_GET['action']) {
+if (isset($_GET['action']))
+{
+    match ($_GET['action']) 
+    {
         'listAnimals' => listAnimals(),
-        'animal' => animal(),
+        'animalView' => animalView(),
         'home' => listAnimalsLast(),
         'login' => login(),
         'admin' => admin(),
-        'listUsers' => users(),
+        'listUsers' => listUsers(),
         'addAdmin' => addAdmin(),
         'addAnimal' => addAnimal(),
         default => listAnimalsLast(),
     };
 }
-else {
+else 
+{
     listAnimalsLast();
 }
 

@@ -1,4 +1,5 @@
 <?php
+    // Parametre de la bdd
     define('USER',"root");
     define('PASSWD',"root");
     define('SERVER',"localhost");

@@ -22,8 +22,6 @@ function createAnimal($values){
     $db = dbConnect();
     $sql = "INSERT INTO animals (name,age,race,color,description,image,postal_code) VALUES (?,?,?,?,?,?,?)";
     $res = $db -> prepare($sql);
-    var_dump($sql);
-    var_dump($values);
     $res = $res -> execute($values);
     return $res;
 }

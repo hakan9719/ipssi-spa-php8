@@ -43,8 +43,7 @@
                     <input type="file" class="form-control" name="image">
                 </div>
             </div>
-        </div> 
-
+        </div>
         <input class="btn btn-primary" type="submit" value="Ajouter"></input>
     </form>
 </div>
