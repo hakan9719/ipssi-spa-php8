@@ -21,7 +21,6 @@ if (isset($_GET['action'])) {
         'listUsers' => users(),
         'addAdmin' => addAdmin(),
         'addAnimal' => addAnimal(),
-        'updateAnimal' => updateAnimal(),
         default => listAnimalsLast(),
     };
 }

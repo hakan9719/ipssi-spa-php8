@@ -50,9 +50,4 @@ function addAnimal(){
     require('./view/addAnimalView.php');
 }
 
-function updateAnimal(){
-    require('./view/updateAnimalView.php');
-
-}
-
 ?>
